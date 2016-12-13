@@ -9,7 +9,7 @@ if (Meteor.isClient) {
          });
        });
 
-     Template.hello.events({
+     Template.cosmochat.events({
         'submit form': function(event) {
            event.preventDefault();
            var post = {
@@ -22,7 +22,7 @@ if (Meteor.isClient) {
        }
      });
 
-      Template.hello.helpers({
+      Template.cosmochat.helpers({
           derniersMessages : function() {
                 if (Session.get("active")) {
                     return Messages.find({}, {sort : {time : -1}, limit : 500});

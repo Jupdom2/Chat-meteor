@@ -1,23 +1,25 @@
-/* CSS declarations go here */
-
-body, #formulaire{
-  width: 800px;
-  /*height: 800px;*/
-  margin: auto;
-}
 
 body {
-  background: #fafafa;
+  background: #ececec;
   font-family: 'Droid sans', sans-serif;
-}
+  font-size: 14px;
+} 
+
 h1{
   color: #054850;
-  /*opacity: .5;*/
   font-size: 26px;
   font-weight: 400;
   text-align: center;
   margin: 4% 0 ;
 }
+
+/* ********* FORMULAIRE **********/
+
+#formulaire{
+  width: 800px;
+  margin: auto;
+}
+
 #formulaire{
   position: relative;
   background: #fff;
@@ -27,55 +29,60 @@ h1{
   margin-bottom: 10%;
 }
 
-textarea, input{
+.form-group{
+  margin-bottom: 20px;
+}
+
+label {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: black;
+}
+
+textarea, 
+input{
   height: 40px;
   border-radius: 3px;
   border: 1px solid #e7e7e7;
   outline: none;
   resize: none;
+  padding-left: 5px;
 }
 
-label {
-  width: 150px;
-	display: block;
-  margin-bottom: 10px;
-}
-
-#pseudo{
-  color: #9aa0a1;
-  margin-bottom: 40px;
-  /*font-weight: 800;*/
-}
-
-textarea{
-  color: #9aa0a1;
-  margin: -27px 0;
-  border-radius: 5px 0px 0px 5px;
+::-webkit-input-placeholder{
+  color: #a1a1a1;
   font-family: 'Droid sans', sans-serif;
-  font-size: 14px;
-  padding: 10px;
-
 }
-input[type="submit"] {
 
-  color:#3b747a;
+/****** BTN ******/
+
+input.bouton_submit{
+  color: #3b747a;
   border-radius: 0px 5px 5px 0px;
-  background-color:#6fd7e4;
+  background-color: #6fd7e4;
   border: #5ea2aa 2px solid;
-  height: 62px;
+  height: 47px;
   padding: 8px 30px;
-  margin: 0 -5px;
-  /*text-transform: uppercase;*/
+  margin: 2px -9px;
   font-weight: 600;
-  cursor:pointer;
+  cursor: pointer;
+  vertical-align: text-bottom;
 }
 
-::-webkit-input-placeholder {
-   color: #a1a1a1;
-   padding-left: 12px;
-   font-family: 'Droid sans', sans-serif;
-
+input.bouton_submit:hover{
+  background-color: #60b5bf;
+  color: white;
 }
+
+
+.form-group.message,
+.bouton_submit{
+  display: inline-block;
+}
+
+/******* CONTENT DU MESSAGE *******/
 
 #content_message{
   height: 300px;
@@ -83,4 +90,49 @@ input[type="submit"] {
   margin-bottom: 7%;
   padding-bottom: 4%;
   overflow-y: scroll;
+  padding-right: 15px;
 }
+
+ul,
+li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li.one-message{
+  background-color: #ddf5ff;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 0px 10px 10px 10px;
+}
+
+li:nth-child(2n+0){
+  background-color: #a0e3ff;
+  border-radius: 10px 10px 0px 10px;
+}
+
+.pseudo-box{
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.time{
+  color: grey;
+  margin-bottom: 5px;
+  max-width: 55px;
+  overflow: hidden;
+  max-height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.message-box{
+
+}
+
+
+
+

@@ -1,32 +1,40 @@
 
 <head>
-      <title>Cosmochat</title>
-      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+  <title>Cosmochat</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
 </head>
 
-    <body>
-      <h1>Bienvenue sur Cosmochat</h1>
+  <body>
+    <h1>Bienvenue sur Cosmochat</h1>
+    {{> cosmochat}}
+  </body>
 
-      {{> hello}}
-    </body>
+  <template name="cosmochat">
+    <form id="formulaire">
+      <div id="content_message">
+        <ul>
+        {{#each derniersMessages}}
+          <li class="one-message">
+            <div class="pseudo-box">{{pseudo}}</div>
+            <div class="time">{{time}}</div>
+            <div class="message-box">{{message}}</div>
+          </li>
+        {{/each}}
+         </ul>
+      </div>
 
-    <template name="hello">
-      <form id="formulaire">
-            <div id="content_message">
-              {{#each derniersMessages}}
-              <p>
-                <label>{{pseudo}}</label>
-                {{time}}<br>
-                {{message}}
-              </p>
-              {{/each}}
+      <div class="form-group">
+        <label>Pseudo</label>
+        <input placeholder="Pseudo" type="text" id="pseudo" name="pseudo">
+      </div>
 
-            </div>
-            <label>Pseudo</label><input placeholder="@Scott" type="text" id="pseudo" name="pseudo"><br>
-            <label>Message</label><textarea placeholder="Ecrivez votre message ici..."  rows="2" cols="92" name="message" id="message"></textarea>
-            <input type="submit" class="bouton_submit" value="Envoyer">
-       </form>
+      <div class="form-group message">
+        <label>Message</label>
+        <textarea placeholder="Ecrivez votre message ici..."  rows="2" cols="92" name="message" id="message"></textarea>
+      </div>
+      
+      <input type="submit" class="bouton_submit" value="Envoyer">
+   </form>
 
-
-    </template>
+  </template>
