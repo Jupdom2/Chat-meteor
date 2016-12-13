@@ -3,7 +3,7 @@ body {
   background: #ececec;
   font-family: 'Droid sans', sans-serif;
   font-size: 14px;
-} 
+}
 
 h1{
   color: #054850;
@@ -41,7 +41,7 @@ label {
   color: black;
 }
 
-textarea, 
+textarea,
 input{
   height: 40px;
   border-radius: 3px;
@@ -63,9 +63,9 @@ input.bouton_submit{
   border-radius: 0px 5px 5px 0px;
   background-color: #6fd7e4;
   border: #5ea2aa 2px solid;
-  height: 47px;
+  height: 46px;
   padding: 8px 30px;
-  margin: 2px -9px;
+  margin: 4px -9px;
   font-weight: 600;
   cursor: pointer;
   vertical-align: text-bottom;
@@ -132,7 +132,3 @@ li:nth-child(2n+0){
 .message-box{
 
 }
-
-
-
-
