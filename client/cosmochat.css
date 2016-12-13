@@ -1,0 +1,86 @@
+/* CSS declarations go here */
+
+body, #formulaire{
+  width: 800px;
+  /*height: 800px;*/
+  margin: auto;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Droid sans', sans-serif;
+}
+h1{
+  color: #054850;
+  /*opacity: .5;*/
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+  margin: 4% 0 ;
+}
+#formulaire{
+  position: relative;
+  background: #fff;
+  border-top: #6fd7e4 10px solid;
+  border-radius: 10px;
+  padding: 30px 20px 30px 20px ;
+  margin-bottom: 10%;
+}
+
+textarea, input{
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #e7e7e7;
+  outline: none;
+  resize: none;
+}
+
+label {
+  width: 150px;
+	display: block;
+  margin-bottom: 10px;
+}
+
+#pseudo{
+  color: #9aa0a1;
+  margin-bottom: 40px;
+  /*font-weight: 800;*/
+}
+
+textarea{
+  color: #9aa0a1;
+  margin: -27px 0;
+  border-radius: 5px 0px 0px 5px;
+  font-family: 'Droid sans', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+
+}
+input[type="submit"] {
+
+  color:#3b747a;
+  border-radius: 0px 5px 5px 0px;
+  background-color:#6fd7e4;
+  border: #5ea2aa 2px solid;
+  height: 62px;
+  padding: 8px 30px;
+  margin: 0 -5px;
+  /*text-transform: uppercase;*/
+  font-weight: 600;
+  cursor:pointer;
+}
+
+::-webkit-input-placeholder {
+   color: #a1a1a1;
+   padding-left: 12px;
+   font-family: 'Droid sans', sans-serif;
+
+}
+
+#content_message{
+  height: 300px;
+  border-bottom: 1px solid #6fd7e4;
+  margin-bottom: 7%;
+  padding-bottom: 4%;
+  overflow-y: scroll;
+}
