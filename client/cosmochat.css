@@ -33,7 +33,7 @@ h1{
   margin-bottom: 20px;
 }
 
-label {
+#formulaire label {
   width: 150px;
   display: block;
   margin-bottom: 10px;
@@ -41,8 +41,8 @@ label {
   color: black;
 }
 
-textarea,
-input{
+#formulaire textarea,
+#formulaire input{
   height: 40px;
   border-radius: 3px;
   border: 1px solid #e7e7e7;
@@ -58,7 +58,7 @@ input{
 
 /****** BTN ******/
 
-input.bouton_submit{
+#formulaire input.bouton_submit{
   color: #3b747a;
   border-radius: 0px 5px 5px 0px;
   background-color: #6fd7e4;
@@ -71,7 +71,7 @@ input.bouton_submit{
   vertical-align: text-bottom;
 }
 
-input.bouton_submit:hover{
+#formulaire input.bouton_submit:hover{
   background-color: #60b5bf;
   color: white;
 }
@@ -93,21 +93,21 @@ input.bouton_submit:hover{
   padding-right: 15px;
 }
 
-ul,
-li{
+#formulaire ul,
+#formulaire li{
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-li.one-message{
+#formulaire li.one-message{
   background-color: #ddf5ff;
   margin-bottom: 30px;
   padding: 20px;
   border-radius: 0px 10px 10px 10px;
 }
 
-li:nth-child(2n+0){
+#formulaire li:nth-child(2n+0){
   background-color: #a0e3ff;
   border-radius: 10px 10px 0px 10px;
 }
@@ -129,6 +129,26 @@ li:nth-child(2n+0){
   vertical-align: middle;
 }
 
-.message-box{
+/* ********* Login **********/
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

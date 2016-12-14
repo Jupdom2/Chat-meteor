@@ -14,18 +14,27 @@ if (Meteor.isClient) {
       event.preventDefault();
       var post = {
         pseudo : $(event.target).find('[name=pseudo]').val(),
-        message : $(event.target).find('[name=message]').val()
+        message : $(event.target).find('[name=message]').val(),
+        channel : $(event.target).find('[name=chanel]').val()
       }
+
+      $(event.target).find('[name=pseudo]').val(" "),
+      $(event.target).find('[name=message]').val(" ")
+      
+      console.log(post)
+
       if ( (post.message != "") && (post.pseudo != "") ) {
         Meteor.call("ajouteMessage", post);
+        var post = {
+        }
       }
     }
   });
 
-  Template.cosmochat.helpers({
-    derniersMessages : function() {
+  Template.chanel1.helpers({
+    MessagesChan1 : function() {
       if (Session.get("active")) {
-        return Messages.find({}, {sort : {time : 1}, limit : 200});
+        return Messages.find({ chanel:1}, {sort : {time : 1}, limit : 200});
       } 
       else {
         return [];
@@ -33,3 +42,6 @@ if (Meteor.isClient) {
     }
   });
 }
+
+
+// ///// CHANEL /////
